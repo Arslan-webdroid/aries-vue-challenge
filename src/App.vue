@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <CodingChallenge :optionsData="sampleData"/>
+    <CodingChallenge :optionsData="sampleData" />
   </div>
 </template>
 
 <script>
-import CodingChallenge from './components/CodingChallenge.vue'
+import CodingChallenge from './components/CodingChallenge.vue';
 
 export default {
   name: 'App',
@@ -16,41 +16,41 @@ export default {
     return {
       sampleData: [
         {
-          "strike_price": 100, 
+          "strikePrice": 100, 
           "type": "Call", 
           "bid": 10.05, 
           "ask": 12.04, 
-          "long_short": "long", 
-          "expiration_date": "2025-12-17T00:00:00Z"
+          "longShort": "long", 
+          "expirationDate": "2025-12-17T00:00:00Z"
         },
         {
-          "strike_price": 102.50, 
+          "strikePrice": 102.50, 
           "type": "Call", 
           "bid": 12.10, 
           "ask": 14, 
-          "long_short": "long", 
-          "expiration_date": "2025-12-17T00:00:00Z"
+          "longShort": "long", 
+          "expirationDate": "2025-12-17T00:00:00Z"
         },
         {
-          "strike_price": 103, 
+          "strikePrice": 103, 
           "type": "Put", 
           "bid": 14, 
           "ask": 15.50, 
-          "long_short": "short", 
-          "expiration_date": "2025-12-17T00:00:00Z"
+          "longShort": "short", 
+          "expirationDate": "2025-12-17T00:00:00Z"
         },
         {
-          "strike_price": 105, 
+          "strikePrice": 105, 
           "type": "Put", 
           "bid": 16, 
           "ask": 18, 
-          "long_short": "long", 
-          "expiration_date": "2025-12-17T00:00:00Z"
+          "longShort": "long", 
+          "expirationDate": "2025-12-17T00:00:00Z"
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style>
